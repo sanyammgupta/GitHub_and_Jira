@@ -19,18 +19,18 @@ class UnsupportedTransactionException extends Exception{
 			
 			try {
 			switch(transactionType) {
-			case "credit" :
+			 case "credit" :
 				Scanner sc = new Scanner(System.in);
 				System.out.println("Enter the amount to be credited:- ");
 				String cred = sc.nextLine();
-				System.out.println("Amount credited : " + cred);
-				break;
+				 System.out.println("Amount credited : " + cred);
+				break
 			case "debit" :
 				Scanner pq = new Scanner(System.in);
 				System.out.println("Enter the amount to be debited");
 				String deb = pq.nextLine();
-				System.out.println("Amount debited : " + deb);
-				break;
+				 System.out.println("Amount debited : " + deb);
+				break
 			case "balanceenquiry" :
 				System.out.println("Your balance is");
 				break;
@@ -38,8 +38,8 @@ class UnsupportedTransactionException extends Exception{
 				Scanner rs = new Scanner(System.in);
 				System.out.println("Enter your new pin");
 				String pin = rs.nextLine();
-				System.out.println("Changed pin is : "+pin);
-				break;
+				 System.out.println("Changed pin is : "+pin);
+				break
 			default:
 				throw new UnsupportedTransactionException();
 			}
